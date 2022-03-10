@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Etch-A-Sketch Project</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="title">Etch-A-Sketch</div>
+            <div class="content">
+                <div class="board"></div>
+                <div class="buttons">
+                    <button class = "blackBtn" onclick = "changeColor('black')">Black</button>
+                    <button class = "grayBtn" onclick = "changeColor('gray')">Gray</button>
+                    <button class = "rainbowBtn" onclick = "changeColor('rainbow')">Rainbow</button>
+                    <button class = "eraserBtn" onclick = "changeColor('white')">Eraser</button>
+                    <button class = "resetBtn" onclick = "resetBoard()">Reset</button>
+                </div>
+                <div>
+                    <input 
+                        type = "text" 
+                        placeholder = "Size of Board" 
+                        value = "16" 
+                        onchange = "changeSize(this.value)" />
+                    <button class = "sizeBtn">Set Size</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src = "script.js"></script>
+</html>
